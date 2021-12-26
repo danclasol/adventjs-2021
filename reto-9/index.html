@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+    <h1>Reto 9 - Agrupando cosas automaticamente</h1>
+
+    <article class="test">
+      <pre class="test__code">
+        groupBy([6.1, 4.2, 6.3], Math.floor) // { 6: [6.1, 6.3], 4: [4.2] }
+      </pre>
+      <pre class="test__result" id="result1"></pre>
+    </article>
+
+    <article class="test">
+      <pre class="test__code">
+        groupBy(['one', 'two', 'three'], 'length') // { 3: ['one', 'two'], 5: ['three'] } 
+      </pre>
+      <pre class="test__result" id="result2"></p>
+    </article>
+
+    <article class="test">
+      <pre class="test__code">
+        groupBy([{ age: 23 }, { age: 24 }], "age"); // { 23: [{age: 23}], 24: [{age: 24}] }
+      </pre>
+      <pre class="test__result" id="result3"></p>
+    </article>
+
+    <article class="test">
+      <pre class="test__code">
+        groupBy(
+          [1397639141184, 1363223700000],
+          timestamp => new Date(timestamp).getFullYear()
+        )
+        // { 2013: [1363223700000], 2014: [1397639141184] }
+      </pre>
+      <pre class="test__result" id="result4"></pre>
+    </article>
+
+    <article class="test">
+      <pre class="test__code">
+        groupBy([
+          { title: 'JavaScript: The Good Parts', rating: 8 },
+          { title: 'Aprendiendo Git', rating: 10 },
+          { title: 'Clean Code', rating: 9 },
+        ], 'rating')
+        // { 8: [{ title: 'JavaScript: The Good Parts', rating: 8 }],
+        //   9: [{ title: 'Clean Code', rating: 9 }],
+        //   10: [{ title: 'Aprendiendo Git', rating: 10 }] }
+      </pre>
+      <pre class="test__result" id="result5"></pre>
+    </article>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

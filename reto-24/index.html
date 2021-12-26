@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reto 24 - Comparando arboles de Navidad</h1>
+
+    <article class="test">
+      <pre class="test__code">  
+        const tree = {
+          value: 1,
+          left: { value: 2, left: null, right: null },
+          right: { value: 3, left: null, right: null }
+        }
+
+        const tree2 = {
+          value: 1,
+          left: { value: 3, left: { value: 2, left: null, right: null }, right: null },
+          right: { value: 5, left: null, right: { value: 4, left: null, right: null } }
+        }
+      </pre>
+      <label>Resultado</label>  
+      <p class="test__result" id="result"></p>
+    </article>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

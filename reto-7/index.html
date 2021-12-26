@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1>Reto 7 - Buscando en el almacen...</h1>
+    <h2>Almacen 1 -> almacen</h2>
+    <pre>
+        estanteria1: {
+            cajon1: {
+              producto1: "coca-cola",
+              producto2: "fanta",
+              producto3: "sprite",
+            },
+          },
+          estanteria2: {
+            cajon1: "vacio",
+            cajon2: {
+              producto1: "pantalones",
+              producto2: "camiseta"
+            },
+          },
+    </pre>
+    <input id="almacen1" type="text"/>
+    <button id="button1">Exists</button>
+    <p id="result1"></p>
+
+    <h2>Almacen 2 -> otroAlmacen</h2>
+    <pre>
+        baul: {
+            fondo: {
+              objeto: "cd-rom",
+              "otro-objeto": "disquette",
+              "otra-cosa": "mando",
+            },
+          },
+    </pre>
+
+    <input id="almacen2" type="text"/>
+    <button id="button2">Exists</button>
+    <p id="result2"></p>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
